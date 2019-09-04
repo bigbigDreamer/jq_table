@@ -1,0 +1,3 @@
+*.html linguist-language = JS
+*.css linguist-language = JS
+*.js linguist-language = JS

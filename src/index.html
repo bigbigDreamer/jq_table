@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态表格练习</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1380438_7fbpxrec7zn.css">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- 定义BootStrap生效的总容器 -->
+<div class="container">
+    <div class="row">
+        <!--   表头提示  -->
+        <div class="col-md-12">
+            <h1 class="text-center">jQuery+BootStrap动态表格</h1>
+        </div>
+        <!--表格主题-->
+        <div class="col-md-12">
+            <div class="row  add-row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary " id="addBtn">
+                        <span class="iconfont icon-tianjia"></span> 新增
+                    </button>
+                    &emsp;
+                    <button type="button" class="btn btn-success " id="printBtn">
+                        <span class="iconfont icon-dayin"></span> 打印日志
+                    </button>
+                </div>
+            </div>
+            <table class="table table-hover">
+                <!--表头-->
+                <thead>
+                <tr>
+                    <th>#id</th>
+                    <th>姓名</th>
+                    <th>电话</th>
+                    <th>在职状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--表格主体-->
+                </tbody>
+                <div id="myAlert" class="alert alert-danger" style="display: none">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <strong>警告！</strong><span>你确定要删除当前行？</span>
+                    <br>
+                    <button class="btn btn-success" id="confirmBtn">确定</button>
+                </div>
+            </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="log">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
